@@ -1,0 +1,97 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f3f1e3;
+    padding: 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/old-wall.png');
+    color: #333;
+    perspective: 1000px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+}
+
+.news {
+    background-color: #fffef7;
+    border: 2px solid #a8947b;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.news h2 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #2e2a1e;
+    font-weight: bold;
+    text-align: center;
+}
+
+.news img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #b0a897;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#jpegmafia {
+    transform: rotate(-2deg);
+    background-color: #f2e9d3;
+}
+
+#littlesimz {
+    transform: rotate(1deg);
+    background-color: #e8e2cf;
+}
+
+#slint {
+    transform: rotate(2deg);
+    background-color: #f7ece1;
+}
+
+#schoolboy {
+    transform: rotate(-3deg);
+    background-color: #f1e9da;
+}
+
+#remaininlight {
+    transform: rotate(3deg);
+    background-color: #f8f1e8;
+}
+
+#hellfire {
+    transform: rotate(2deg);
+    background-color: #f8f1e8;
+}
+
+#logic {
+    transform: rotate(-1.5deg);
+    background-color: #efe5ce;
+}
+
+#imaginaldisk {
+    transform: rotate(-2deg);
+    background-color: #efe5ce;
+}
+
+.pop-out {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}

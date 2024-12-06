@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodboard JPEG</title>
+    <link rel="stylesheet" href="moodboard jpeg.css">
+</head>
+<body>
+    <div id="moodboard-container"></div>
+
+    <script>
+        const moodboardContainer = document.getElementById('moodboard-container');
+
+        const imageLinks = [
+            '/Users/thelunchlady/Desktop/2/Interaction /Harmonic_collection/photos/a8529b078c02349889b221c6e69810ec.jpg',
+            '/Users/thelunchlady/Desktop/2/Interaction /Harmonic_collection/photos/dae04a6d3f092b44584e148ef5fdc3b1.jpg',
+            '/Users/thelunchlady/Desktop/2/Interaction /Harmonic_collection/photos/8272fe539101c22b01c8b12467230fcc.jpg',
+            '/Users/thelunchlady/Desktop/2/Interaction /Harmonic_collection/photos/6a00596a42bca430ba03682058a324c5.jpg',
+            '/Users/thelunchlady/Desktop/2/Interaction /Harmonic_collection/photos/b41c8874be3655bf8f70788763bf5d97.jpg',
+            '/Users/thelunchlady/Desktop/2/Interaction /Harmonic_collection/photos/2a3627626d0099b09eb987bec29cf51e.jpg',
+            '/Users/thelunchlady/Desktop/2/Interaction /Harmonic_collection/photos/ada0a751745f51d4e4c33b04e1de64d5.jpg',
+            '/Users/thelunchlady/Desktop/2/Interaction /Harmonic_collection/photos/16c6c68bd0c1d6cac307b53e76e4a558.jpg',
+            '/Users/thelunchlady/Desktop/2/Interaction /Harmonic_collection/photos/4defa773ed471aca4d2a3945f63bfdd9.jpg',
+            
+        ];
+
+        imageLinks.forEach((link, index) => {
+            const imgBlock = document.createElement('div');
+            imgBlock.className = 'moodboard-item';
+            imgBlock.style.top = `${Math.random() * 90}vh`;  
+            imgBlock.style.left = `${Math.random() * 90}vw`; 
+
+            const img = document.createElement('img');
+            img.src = link;
+            img.alt = `Image ${index + 1}`;
+            imgBlock.appendChild(img);
+
+            moodboardContainer.appendChild(imgBlock);
+        });
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    background-color: #f7db4f; 
+    font-family: Arial, sans-serif;
+}
+
+.person {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.person img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer; 
+}
+
+.speech-bubble {
+    position: absolute;
+    bottom: 120px;
+    left: 200px; 
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 300px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    display: none; 
+}
+
+.speech-bubble p {
+    margin: 0;
+}

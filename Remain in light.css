@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: #1b1b1b;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.face-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.face {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('photos/face.jpg') no-repeat center/cover; 
+    transition: all 0.3s ease;
+}
+
+.face:hover {
+    animation: glitch 1s steps(5, end) infinite;
+}
+
+.face:nth-child(1) { top: 10%; left: 15%; }
+.face:nth-child(2) { top: 20%; left: 70%; }
+.face:nth-child(3) { top: 50%; left: 40%; }
+.face:nth-child(4) { top: 80%; left: 20%; }
+.face:nth-child(5) { top: 15%; left: 50%; }
+.face:nth-child(6) { top: 65%; left: 75%; }
+.face:nth-child(7) { top: 30%; left: 10%; }
+.face:nth-child(8) { top: 85%; left: 60%; }
+.face:nth-child(9) { top: 40%; left: 80%; }
+
+/* Glitchy red pixels */
+@keyframes glitch {
+    0% { background: url('face.jpg') no-repeat center/cover; }
+    20% { background: red; }
+    40% { background: url('face.jpg') no-repeat center/cover; }
+    60% { background: red; }
+    80% { background: url('face.jpg') no-repeat center/cover; }
+    100% { background: red; }
+}

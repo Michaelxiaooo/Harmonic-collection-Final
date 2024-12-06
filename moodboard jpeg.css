@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #0d0d0d; /* Dark background */
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#moodboard-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.moodboard-item {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Fallback for empty blocks */
+    box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.3); /* Optional */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.moodboard-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.moodboard-item:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 12px rgba(255, 255, 255, 0.5);
+    z-index: 10;
+}
